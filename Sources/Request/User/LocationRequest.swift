@@ -1,6 +1,6 @@
 //
 //  LocationRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 25.02.18.
 //

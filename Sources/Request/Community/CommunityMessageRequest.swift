@@ -1,6 +1,6 @@
 //
 //  CommunityMessageRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 08.02.18.
 //

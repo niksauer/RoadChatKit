@@ -1,6 +1,6 @@
 //
 //  PrivacyRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 14.02.18.
 //

@@ -1,6 +1,6 @@
 //
 //  ConversationRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 18.02.18.
 //

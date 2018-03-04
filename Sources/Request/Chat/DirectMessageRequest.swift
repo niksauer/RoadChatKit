@@ -1,6 +1,6 @@
 //
 //  DirectMessageRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 19.02.18.
 //

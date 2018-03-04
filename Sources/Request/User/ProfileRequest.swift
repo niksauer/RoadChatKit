@@ -1,6 +1,6 @@
 //
 //  ProfileRequest.swift
-//  App
+//  RoadChatKit
 //
 //  Created by Niklas Sauer on 12.02.18.
 //
