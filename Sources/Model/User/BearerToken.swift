@@ -7,9 +7,9 @@
 
 import Foundation
 
-public final class BearerToken: Codable {
+public final class BearerToken: Model {
     public var id: Int?
-    public var userID: Int
+    public var userID: User.ID
     public var token: String
     
     public init(userID: Int, token: String) {

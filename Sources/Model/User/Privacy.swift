@@ -7,9 +7,9 @@
 
 import Foundation
 
-public final class Privacy: Codable {
+public final class Privacy: Model {
     public var id: Int?
-    public var userID: Int
+    public var userID: User.ID
     public var shareLocation = false
     public var showFirstName = true
     public var showLastName = false
@@ -18,11 +18,11 @@ public final class Privacy: Codable {
     public var showAddress = false
     public var showBiography = true
     
-    public init(userID: Int) {
+    public init(userID: User.ID) {
         self.userID = userID
     }
     
-    public init(userID: Int, shareLocation: Bool, showFirstName: Bool, showLastName: Bool, showBirth: Bool, showSex: Bool, showAddress: Bool, showBiography: Bool) {
+    public init(userID: User.ID, shareLocation: Bool, showFirstName: Bool, showLastName: Bool, showBirth: Bool, showSex: Bool, showAddress: Bool, showBiography: Bool) {
         self.userID = userID
         self.shareLocation = shareLocation
         self.showFirstName = showFirstName
@@ -33,7 +33,7 @@ public final class Privacy: Codable {
         self.showBiography = showBiography
     }
     
-    public convenience init(userID: Int, privacyRequest request: PrivacyRequest) {
+    public convenience init(userID: User.ID, privacyRequest request: PrivacyRequest) {
         self.init(userID: userID, shareLocation: request.shareLocation, showFirstName: request.showFirstName, showLastName: request.showLastName, showBirth: request.showBirth, showSex: request.showSex, showAddress: request.showAddress, showBiography: request.showBiography)
     }
 }

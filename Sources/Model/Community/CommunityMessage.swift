@@ -7,30 +7,30 @@
 
 import Foundation
 
-public final class CommunityMessage: Codable {
+public final class CommunityMessage: Model {
     public var id: Int?
-    public var senderID: Int
-    public var locationID: Int
+    public var senderID: User.ID
+    public var locationID: Location.ID
     public var time: Date
     public var message: String
     
-    public init(senderID: Int, locationID: Int, time: Date, message: String) {
+    public init(senderID: User.ID, locationID: Location.ID, time: Date, message: String) {
         self.senderID = senderID
         self.locationID = locationID
         self.time = time
         self.message = message
     }
     
-    public convenience init(senderID: Int, locationID: Int, communityRequest: CommunityMessageRequest) {
+    public convenience init(senderID: User.ID, locationID: Location.ID, communityRequest: CommunityMessageRequest) {
         self.init(senderID: senderID, locationID: locationID, time: communityRequest.time, message: communityRequest.message)
     }
 }
 
 public extension CommunityMessage {
     public struct PublicCommunityMessage: Codable {
-        public let id: Int
-        public let senderID: Int
-        public let locationID: Int
+        public let id: CommunityMessage.ID
+        public let senderID: User.ID
+        public let locationID: Location.ID
         public let time: Date
         public let message: String
         public let upvotes: Int

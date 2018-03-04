@@ -7,9 +7,9 @@
 
 import Foundation
 
-public final class User: Codable {
+public final class User: Model {
     public var id: Int?
-    public var locationID: Int?
+    public var locationID: Location.ID?
     public var email: String
     public var username: String
     public var password: String
@@ -36,7 +36,7 @@ public extension User {
     }
     
     public struct PublicUser: Codable {
-        public let id: Int
+        public let id: User.ID
         public var email: String?
         public let username: String
         public let registry: Date

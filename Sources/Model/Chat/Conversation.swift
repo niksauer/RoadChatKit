@@ -7,13 +7,13 @@
 
 import Foundation
 
-public final class Conversation: Codable {
+public final class Conversation: Model {
     public var id: Int?
-    public var creatorID: Int
+    public var creatorID: User.ID
     public var title: String
     public var creation: Date = Date()
     
-    public init(creatorID: Int, title: String) {
+    public init(creatorID: User.ID, title: String) {
         self.creatorID = creatorID
         self.title = title
     }
@@ -25,8 +25,8 @@ public extension Conversation {
     }
     
     public struct PublicConversation: Codable {
-        public let id: Int
-        public let creatorID: Int
+        public let id: Conversation.ID
+        public let creatorID: User.ID
         public let title: String
         public let creation: Date
         public let newestMessage: DirectMessage.PublicDirectMessage?

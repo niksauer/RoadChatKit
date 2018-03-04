@@ -7,15 +7,15 @@
 
 import Foundation
 
-public final class TrafficMessage: Codable {
+public final class TrafficMessage: Model {
     public var id: Int?
-    public var senderID: Int
-    public var locationID: Int
+    public var senderID: User.ID
+    public var locationID: Location.ID
     public var type: String
     public var time: Date
     public var message: String?
     
-    public init(senderID: Int, locationID: Int, type: String, time: Date, message: String?) {
+    public init(senderID: User.ID, locationID: User.ID, type: String, time: Date, message: String?) {
         self.senderID = senderID
         self.locationID = locationID
         self.type = type
@@ -23,16 +23,16 @@ public final class TrafficMessage: Codable {
         self.message = message
     }
     
-    public convenience init(senderID: Int, locationID: Int, trafficRequest: TrafficMessageRequest) {
+    public convenience init(senderID: User.ID, locationID: Location.ID, trafficRequest: TrafficMessageRequest) {
         self.init(senderID: senderID, locationID: locationID, type: trafficRequest.type, time: trafficRequest.time, message: trafficRequest.message)
     }
 }
 
 public extension TrafficMessage {
     public struct PublicTrafficMessage: Codable {
-        public var id: Int
-        public var senderID: Int
-        public var locationID: Int
+        public var id: TrafficMessage.ID
+        public var senderID: User.ID
+        public var locationID: Location.ID
         public var type: String
         public var time: Date
         public var message: String?

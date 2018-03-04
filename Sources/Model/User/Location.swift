@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Location: Codable {
+public final class Location: Model {
     public var id: Int?
     public var timestamp: Date
     public var latitude: Double

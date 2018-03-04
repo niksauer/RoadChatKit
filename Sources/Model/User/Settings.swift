@@ -7,23 +7,23 @@
 
 import Foundation 
 
-public final class Settings: Codable {
+public final class Settings: Model {
     public var id: Int?
-    public var userID: Int
+    public var userID: User.ID
     public var communityRadius: Int = 10
     public var trafficRadius: Int = 5
     
-    public init(userID: Int) {
+    public init(userID: User.ID) {
         self.userID = userID
     }
     
-    public init(userID: Int, communityRadius: Int, trafficRadius: Int) {
+    public init(userID: User.ID, communityRadius: Int, trafficRadius: Int) {
         self.userID = userID
         self.communityRadius = communityRadius
         self.trafficRadius = trafficRadius
     }
     
-    public convenience init(userID: Int, settingsRequest request: SettingsRequest) {
+    public convenience init(userID: User.ID, settingsRequest request: SettingsRequest) {
         self.init(userID: userID, communityRadius: request.communityRadius, trafficRadius: request.trafficRadius)
     }
 }

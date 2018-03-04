@@ -7,16 +7,16 @@
 
 import Foundation
 
-public final class Car: Codable {
+public final class Car: Model {
     public var id: Int?
-    public var userID: Int
+    public var userID: User.ID
     public var manufacturer: String
     public var model: String
     public var production: Date
     public var performance: Int?
     public var color: Int?
     
-    public init(userID: Int, manufacturer: String, model: String, production: Date, performance: Int?, color: Int?) {
+    public init(userID: User.ID, manufacturer: String, model: String, production: Date, performance: Int?, color: Int?) {
         self.userID = userID
         self.manufacturer = manufacturer
         self.model = model
@@ -25,7 +25,7 @@ public final class Car: Codable {
         self.color = color
     }
     
-    public convenience init(userID: Int, carRequest request: CarRequest) {
+    public convenience init(userID: User.ID, carRequest request: CarRequest) {
         self.init(userID: userID, manufacturer: request.manufacturer, model: request.model, production: request.production, performance: request.performance, color: request.color)
     }
 }
@@ -36,8 +36,8 @@ public extension Car {
     }
     
     public struct PublicCar: Codable {
-        public let id: Int
-        public let userID: Int
+        public let id: Car.ID
+        public let userID: User.ID
         public let manufacturer: String
         public let model: String
         public let production: Date

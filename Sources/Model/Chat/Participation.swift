@@ -13,14 +13,14 @@ public enum ApprovalStatus: String {
     case denied
 }
 
-public final class Participation: Codable {
+public final class Participation: Model {
     public var id: Int?
-    public var userID: Int
-    public var conversationID: Int
+    public var userID: User.ID
+    public var conversationID: Conversation.ID
     public var approvalStatus: String = ApprovalStatus.requested.rawValue
     public var joining: Date = Date()
     
-    public init(userID: Int, conversationID: Int) {
+    public init(userID: User.ID, conversationID: Conversation.ID) {
         self.userID = userID
         self.conversationID = conversationID
     }
@@ -32,7 +32,7 @@ public extension Participation {
     }
     
     public struct PublicParticipant: Codable {
-        public let userID: Int
+        public let userID: User.ID
         public let approvalStatus: String
         public let joining: Date
         

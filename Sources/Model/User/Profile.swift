@@ -7,9 +7,9 @@
 
 import Foundation
 
-public final class Profile: Codable {
+public final class Profile: Model {
     public var id: Int?
-    public var userID: Int
+    public var userID: User.ID
     public var firstName: String
     public var lastName: String
     public var birth: Date
@@ -20,8 +20,7 @@ public final class Profile: Codable {
     public var postalCode: Int?
     public var country: String?
     
-    
-    public init(userID: Int, firstName: String, lastName: String, birth: Date, sex: String?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?) {
+    public init(userID: User.ID, firstName: String, lastName: String, birth: Date, sex: String?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?) {
         self.userID = userID
         self.firstName = firstName
         self.lastName = lastName
@@ -34,7 +33,7 @@ public final class Profile: Codable {
         self.country = country
     }
     
-    public convenience init(userID: Int, profileRequest request: ProfileRequest) {
+    public convenience init(userID: User.ID, profileRequest request: ProfileRequest) {
         self.init(userID: userID, firstName: request.firstName, lastName: request.lastName, birth: request.birth, sex: request.sex, biography: request.biography, streetName: request.streetName, streetNumber: request.streetNumber, postalCode: request.postalCode, country: request.country)
     }
 }
