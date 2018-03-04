@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LocationRequest: Codable {
+public struct LocationRequest: Codable {
     public let time: Date
     public let latitude: Double
     public let longitude: Double

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LoginRequest: Codable {
+public struct LoginRequest: Codable {
     public let user: String
     public let password: String
     

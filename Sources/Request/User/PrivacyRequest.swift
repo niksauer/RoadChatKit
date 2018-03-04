@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PrivacyRequest: Codable {
+public struct PrivacyRequest: Codable {
     public let shareLocation: Bool
     public let showFirstName: Bool
     public let showLastName: Bool

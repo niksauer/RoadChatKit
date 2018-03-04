@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct SettingsRequest: Codable {
+public struct SettingsRequest: Codable {
     public let communityRadius: Int
     public let trafficRadius: Int
     
