@@ -11,4 +11,4 @@
 </a>
 
 ### Framework
-Single source of truth for all RoadChat models in use. This framework supports both server and client Swift applications.
+Single source of truth for all RoadChat models in use. This framework supports both server and client-side Swift applications.
