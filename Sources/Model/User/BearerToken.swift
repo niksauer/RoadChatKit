@@ -25,11 +25,11 @@ public extension BearerToken {
     
     public struct PublicBearerToken: Codable {
         public let userID: Int
-	public let token: String
+        public let token: String
         
         public init(token: BearerToken) {
             self.userID = token.userID
-	    self.token = token.token
+            self.token = token.token
         }
     }
 }

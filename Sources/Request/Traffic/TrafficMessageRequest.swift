@@ -7,6 +7,10 @@
 
 import Foundation
 
+public enum TrafficType: String {
+    case jam, accident, danger, detour
+}
+
 public struct TrafficMessageRequest: Codable {
     public let type: String
     public let time: Date
@@ -20,8 +24,8 @@ public struct TrafficMessageRequest: Codable {
     public let course: Double
     public let speed: Double
     
-    public init(type: String, time: Date, message: String?, latitude: Double, longitude: Double, altitude: Double, horizontalAccuracy: Double, verticalAccuracy: Double, course: Double, speed: Double) {
-        self.type = type
+    public init(type: TrafficType, time: Date, message: String?, latitude: Double, longitude: Double, altitude: Double, horizontalAccuracy: Double, verticalAccuracy: Double, course: Double, speed: Double) {
+        self.type = type.rawValue
         self.time = time
         self.message = message
         self.latitude = latitude
