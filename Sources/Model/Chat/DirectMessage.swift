@@ -31,15 +31,21 @@ public final class DirectMessage: Model {
 
 public extension DirectMessage {
     public func publicDirectMessage() throws -> PublicDirectMessage {
-        return PublicDirectMessage(directMessage: self)
+        return try PublicDirectMessage(directMessage: self)
     }
     
     public struct PublicDirectMessage: Codable {
+        public let id: DirectMessage.ID
         public let senderID: User.ID
         public let time: Date
         public let message: String
         
-        public init(directMessage: DirectMessage) {
+        public init(directMessage: DirectMessage) throws {
+            guard let id = directMessage.id else {
+                throw ModelError.missingID
+            }
+            
+            self.id = id
             self.senderID = directMessage.senderID
             self.time = directMessage.time
             self.message = directMessage.message
