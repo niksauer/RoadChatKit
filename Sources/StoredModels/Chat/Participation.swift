@@ -13,7 +13,7 @@ public enum ApprovalStatus: String {
     case denied
 }
 
-public final class Participation: Model {
+public final class Participation: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var conversationID: Conversation.ID

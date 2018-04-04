@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class CommunityMessage: Model {
+public final class CommunityMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var locationID: Location.ID
@@ -37,7 +37,7 @@ public extension CommunityMessage {
         
         public init(communityMessage: CommunityMessage, upvotes: Int) throws {
             guard let id = communityMessage.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

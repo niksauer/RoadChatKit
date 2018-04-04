@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Conversation: Model {
+public final class Conversation: StoredModel {
     public var id: Int?
     public var creatorID: User.ID
     public var title: String
@@ -33,7 +33,7 @@ public extension Conversation {
         
         public init(conversation: Conversation, newestMessage: DirectMessage?) throws {
             guard let id = conversation.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

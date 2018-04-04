@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class DirectMessage: Model {
+public final class DirectMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var conversationID: Conversation.ID
@@ -42,7 +42,7 @@ public extension DirectMessage {
         
         public init(directMessage: DirectMessage) throws {
             guard let id = directMessage.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

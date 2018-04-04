@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Profile: Model {
+public final class Profile: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var firstName: String

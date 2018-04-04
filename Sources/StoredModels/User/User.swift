@@ -7,22 +7,18 @@
 
 import Foundation
 
-public final class User: Model {
+public final class User: StoredModel {
     public var id: Int?
     public var locationID: Location.ID?
     public var email: String
     public var username: String
-    public var password: String
+    public var password: Data
     public var registry: Date = Date()
     
-    public init(email: String, username: String, password: String) {
+    public init(email: String, username: String, password: Data) {
         self.email = email
         self.username = username
         self.password = password
-    }
-    
-    public convenience init(registerRequest request: RegisterRequest) {
-        self.init(email: request.email, username: request.username, password: request.password)
     }
 }
 
@@ -52,7 +48,7 @@ public extension User {
         
         public init(user: User, isOwner: Bool) throws {
             guard let id = user.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

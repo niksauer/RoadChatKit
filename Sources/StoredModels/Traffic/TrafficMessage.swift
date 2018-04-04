@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class TrafficMessage: Model {
+public final class TrafficMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var locationID: Location.ID
@@ -41,7 +41,7 @@ public extension TrafficMessage {
         
         public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int) throws {
             guard let id = trafficMessage.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Car: Model {
+public final class Car: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var manufacturer: String
@@ -46,7 +46,7 @@ public extension Car {
         
         public init(car: Car) throws {
             guard let id = car.id else {
-                throw ModelError.missingID
+                throw StoredModelError.missingID
             }
             
             self.id = id

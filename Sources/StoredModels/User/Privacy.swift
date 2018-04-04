@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Privacy: Model {
+public final class Privacy: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var shareLocation = false

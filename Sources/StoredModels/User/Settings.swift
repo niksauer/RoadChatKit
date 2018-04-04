@@ -7,7 +7,7 @@
 
 import Foundation 
 
-public final class Settings: Model {
+public final class Settings: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var communityRadius: Int = 10

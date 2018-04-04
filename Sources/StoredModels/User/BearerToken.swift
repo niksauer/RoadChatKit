@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class BearerToken: Model {
+public final class BearerToken: StoredModel {
     public var id: Int?
     public var userID: User.ID
     public var token: String
