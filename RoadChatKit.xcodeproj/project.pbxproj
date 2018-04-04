@@ -6,107 +6,64 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"RoadChatKit::RoadChatKitPackageTests::ProductTarget" /* RoadChatKitPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_94 /* Build configuration list for PBXAggregateTarget "RoadChatKitPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_97 /* PBXTargetDependency */,
-			);
-			name = RoadChatKitPackageTests;
-			productName = RoadChatKitPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
+		24120C56207553CC002F6B94 /* TrafficMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C36207553CC002F6B94 /* TrafficMessage.swift */; };
+		24120C57207553CC002F6B94 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C37207553CC002F6B94 /* Model.swift */; };
+		24120C58207553CC002F6B94 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C39207553CC002F6B94 /* Conversation.swift */; };
+		24120C59207553CC002F6B94 /* Participation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C3A207553CC002F6B94 /* Participation.swift */; };
+		24120C5A207553CC002F6B94 /* DirectMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C3B207553CC002F6B94 /* DirectMessage.swift */; };
+		24120C5B207553CC002F6B94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C3D207553CC002F6B94 /* Location.swift */; };
+		24120C5C207553CC002F6B94 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C3E207553CC002F6B94 /* BearerToken.swift */; };
+		24120C5D207553CC002F6B94 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C3F207553CC002F6B94 /* Privacy.swift */; };
+		24120C5E207553CC002F6B94 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C40207553CC002F6B94 /* Car.swift */; };
+		24120C5F207553CC002F6B94 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C41207553CC002F6B94 /* Profile.swift */; };
+		24120C60207553CC002F6B94 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C42207553CC002F6B94 /* User.swift */; };
+		24120C61207553CC002F6B94 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C43207553CC002F6B94 /* Settings.swift */; };
+		24120C62207553CC002F6B94 /* CommunityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C45207553CC002F6B94 /* CommunityMessage.swift */; };
+		24120C63207553CC002F6B94 /* TrafficMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C48207553CC002F6B94 /* TrafficMessageRequest.swift */; };
+		24120C64207553CC002F6B94 /* DirectMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C4A207553CC002F6B94 /* DirectMessageRequest.swift */; };
+		24120C65207553CC002F6B94 /* ConversationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C4B207553CC002F6B94 /* ConversationRequest.swift */; };
+		24120C66207553CC002F6B94 /* PrivacyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C4D207553CC002F6B94 /* PrivacyRequest.swift */; };
+		24120C67207553CC002F6B94 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C4E207553CC002F6B94 /* ProfileRequest.swift */; };
+		24120C68207553CC002F6B94 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C4F207553CC002F6B94 /* LoginRequest.swift */; };
+		24120C69207553CC002F6B94 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C50207553CC002F6B94 /* RegisterRequest.swift */; };
+		24120C6A207553CC002F6B94 /* SettingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C51207553CC002F6B94 /* SettingsRequest.swift */; };
+		24120C6B207553CC002F6B94 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C52207553CC002F6B94 /* LocationRequest.swift */; };
+		24120C6C207553CC002F6B94 /* CarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C53207553CC002F6B94 /* CarRequest.swift */; };
+		24120C6D207553CC002F6B94 /* CommunityMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24120C55207553CC002F6B94 /* CommunityMessageRequest.swift */; };
 		OBJ_53 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_59 /* RoadChatKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* RoadChatKitTests.swift */; };
-		OBJ_61 /* RoadChatKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RoadChatKit::RoadChatKit::Product" /* RoadChatKit.framework */; };
-		OBJ_68 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Conversation.swift */; };
-		OBJ_69 /* DirectMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DirectMessage.swift */; };
-		OBJ_70 /* Participation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Participation.swift */; };
-		OBJ_71 /* CommunityMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* CommunityMessage.swift */; };
-		OBJ_72 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* Model.swift */; };
-		OBJ_73 /* TrafficMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* TrafficMessage.swift */; };
-		OBJ_74 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* BearerToken.swift */; };
-		OBJ_75 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Car.swift */; };
-		OBJ_76 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* Location.swift */; };
-		OBJ_77 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Privacy.swift */; };
-		OBJ_78 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Profile.swift */; };
-		OBJ_79 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Settings.swift */; };
-		OBJ_80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* User.swift */; };
-		OBJ_81 /* ConversationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* ConversationRequest.swift */; };
-		OBJ_82 /* DirectMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* DirectMessageRequest.swift */; };
-		OBJ_83 /* CommunityMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* CommunityMessageRequest.swift */; };
-		OBJ_84 /* TrafficMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* TrafficMessageRequest.swift */; };
-		OBJ_85 /* CarRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* CarRequest.swift */; };
-		OBJ_86 /* LocationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* LocationRequest.swift */; };
-		OBJ_87 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* LoginRequest.swift */; };
-		OBJ_88 /* PrivacyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* PrivacyRequest.swift */; };
-		OBJ_89 /* ProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ProfileRequest.swift */; };
-		OBJ_90 /* RegisterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* RegisterRequest.swift */; };
-		OBJ_91 /* SettingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* SettingsRequest.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		24AED4A9204CC147002A1703 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "RoadChatKit::RoadChatKit";
-			remoteInfo = RoadChatKit;
-		};
-		24AED4AA204CC148002A1703 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "RoadChatKit::RoadChatKitTests";
-			remoteInfo = RoadChatKitTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		OBJ_10 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
-		OBJ_11 /* DirectMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessage.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Participation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Participation.swift; sourceTree = "<group>"; };
-		OBJ_14 /* CommunityMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMessage.swift; sourceTree = "<group>"; };
-		OBJ_15 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		OBJ_17 /* TrafficMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMessage.swift; sourceTree = "<group>"; };
-		OBJ_19 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
-		OBJ_20 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
-		OBJ_21 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		OBJ_22 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		OBJ_25 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		OBJ_28 /* ConversationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRequest.swift; sourceTree = "<group>"; };
-		OBJ_29 /* DirectMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageRequest.swift; sourceTree = "<group>"; };
-		OBJ_31 /* CommunityMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMessageRequest.swift; sourceTree = "<group>"; };
-		OBJ_33 /* TrafficMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMessageRequest.swift; sourceTree = "<group>"; };
-		OBJ_35 /* CarRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRequest.swift; sourceTree = "<group>"; };
-		OBJ_36 /* LocationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
-		OBJ_37 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		OBJ_38 /* PrivacyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyRequest.swift; sourceTree = "<group>"; };
-		OBJ_39 /* ProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
-		OBJ_40 /* RegisterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
-		OBJ_41 /* SettingsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRequest.swift; sourceTree = "<group>"; };
-		OBJ_44 /* RoadChatKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadChatKitTests.swift; sourceTree = "<group>"; };
+		24120C36207553CC002F6B94 /* TrafficMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficMessage.swift; sourceTree = "<group>"; };
+		24120C37207553CC002F6B94 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		24120C39207553CC002F6B94 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		24120C3A207553CC002F6B94 /* Participation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Participation.swift; sourceTree = "<group>"; };
+		24120C3B207553CC002F6B94 /* DirectMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectMessage.swift; sourceTree = "<group>"; };
+		24120C3D207553CC002F6B94 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		24120C3E207553CC002F6B94 /* BearerToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
+		24120C3F207553CC002F6B94 /* Privacy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
+		24120C40207553CC002F6B94 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		24120C41207553CC002F6B94 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		24120C42207553CC002F6B94 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		24120C43207553CC002F6B94 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		24120C45207553CC002F6B94 /* CommunityMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityMessage.swift; sourceTree = "<group>"; };
+		24120C48207553CC002F6B94 /* TrafficMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficMessageRequest.swift; sourceTree = "<group>"; };
+		24120C4A207553CC002F6B94 /* DirectMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectMessageRequest.swift; sourceTree = "<group>"; };
+		24120C4B207553CC002F6B94 /* ConversationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationRequest.swift; sourceTree = "<group>"; };
+		24120C4D207553CC002F6B94 /* PrivacyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyRequest.swift; sourceTree = "<group>"; };
+		24120C4E207553CC002F6B94 /* ProfileRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileRequest.swift; sourceTree = "<group>"; };
+		24120C4F207553CC002F6B94 /* LoginRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		24120C50207553CC002F6B94 /* RegisterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRequest.swift; sourceTree = "<group>"; };
+		24120C51207553CC002F6B94 /* SettingsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRequest.swift; sourceTree = "<group>"; };
+		24120C52207553CC002F6B94 /* LocationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRequest.swift; sourceTree = "<group>"; };
+		24120C53207553CC002F6B94 /* CarRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarRequest.swift; sourceTree = "<group>"; };
+		24120C55207553CC002F6B94 /* CommunityMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunityMessageRequest.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"RoadChatKit::RoadChatKit::Product" /* RoadChatKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RoadChatKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"RoadChatKit::RoadChatKitTests::Product" /* RoadChatKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RoadChatKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_60 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_61 /* RoadChatKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_92 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -117,107 +74,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_13 /* Community */ = {
+		24120C34207553CC002F6B94 /* StoreModel */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* CommunityMessage.swift */,
+				24120C35207553CC002F6B94 /* Traffic */,
+				24120C38207553CC002F6B94 /* Chat */,
+				24120C3C207553CC002F6B94 /* User */,
+				24120C44207553CC002F6B94 /* Community */,
 			);
-			path = Community;
+			path = StoreModel;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* Traffic */ = {
+		24120C35207553CC002F6B94 /* Traffic */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* TrafficMessage.swift */,
+				24120C36207553CC002F6B94 /* TrafficMessage.swift */,
 			);
 			path = Traffic;
 			sourceTree = "<group>";
 		};
-		OBJ_18 /* User */ = {
+		24120C38207553CC002F6B94 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_19 /* BearerToken.swift */,
-				OBJ_20 /* Car.swift */,
-				OBJ_21 /* Location.swift */,
-				OBJ_22 /* Privacy.swift */,
-				OBJ_23 /* Profile.swift */,
-				OBJ_24 /* Settings.swift */,
-				OBJ_25 /* User.swift */,
-			);
-			path = User;
-			sourceTree = "<group>";
-		};
-		OBJ_26 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_27 /* Chat */,
-				OBJ_30 /* Community */,
-				OBJ_32 /* Traffic */,
-				OBJ_34 /* User */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		OBJ_27 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_28 /* ConversationRequest.swift */,
-				OBJ_29 /* DirectMessageRequest.swift */,
+				24120C39207553CC002F6B94 /* Conversation.swift */,
+				24120C3A207553CC002F6B94 /* Participation.swift */,
+				24120C3B207553CC002F6B94 /* DirectMessage.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
 		};
-		OBJ_30 /* Community */ = {
+		24120C3C207553CC002F6B94 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_31 /* CommunityMessageRequest.swift */,
-			);
-			path = Community;
-			sourceTree = "<group>";
-		};
-		OBJ_32 /* Traffic */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_33 /* TrafficMessageRequest.swift */,
-			);
-			path = Traffic;
-			sourceTree = "<group>";
-		};
-		OBJ_34 /* User */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_35 /* CarRequest.swift */,
-				OBJ_36 /* LocationRequest.swift */,
-				OBJ_37 /* LoginRequest.swift */,
-				OBJ_38 /* PrivacyRequest.swift */,
-				OBJ_39 /* ProfileRequest.swift */,
-				OBJ_40 /* RegisterRequest.swift */,
-				OBJ_41 /* SettingsRequest.swift */,
+				24120C3D207553CC002F6B94 /* Location.swift */,
+				24120C3E207553CC002F6B94 /* BearerToken.swift */,
+				24120C3F207553CC002F6B94 /* Privacy.swift */,
+				24120C40207553CC002F6B94 /* Car.swift */,
+				24120C41207553CC002F6B94 /* Profile.swift */,
+				24120C42207553CC002F6B94 /* User.swift */,
+				24120C43207553CC002F6B94 /* Settings.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
 		};
-		OBJ_42 /* Tests */ = {
+		24120C44207553CC002F6B94 /* Community */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_43 /* RoadChatKitTests */,
+				24120C45207553CC002F6B94 /* CommunityMessage.swift */,
 			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
+			path = Community;
+			sourceTree = "<group>";
 		};
-		OBJ_43 /* RoadChatKitTests */ = {
+		24120C46207553CC002F6B94 /* RequestModel */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_44 /* RoadChatKitTests.swift */,
+				24120C47207553CC002F6B94 /* Traffic */,
+				24120C49207553CC002F6B94 /* Chat */,
+				24120C4C207553CC002F6B94 /* User */,
+				24120C54207553CC002F6B94 /* Community */,
 			);
-			name = RoadChatKitTests;
-			path = Tests/RoadChatKitTests;
-			sourceTree = SOURCE_ROOT;
+			path = RequestModel;
+			sourceTree = "<group>";
+		};
+		24120C47207553CC002F6B94 /* Traffic */ = {
+			isa = PBXGroup;
+			children = (
+				24120C48207553CC002F6B94 /* TrafficMessageRequest.swift */,
+			);
+			path = Traffic;
+			sourceTree = "<group>";
+		};
+		24120C49207553CC002F6B94 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				24120C4A207553CC002F6B94 /* DirectMessageRequest.swift */,
+				24120C4B207553CC002F6B94 /* ConversationRequest.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		24120C4C207553CC002F6B94 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				24120C4D207553CC002F6B94 /* PrivacyRequest.swift */,
+				24120C4E207553CC002F6B94 /* ProfileRequest.swift */,
+				24120C4F207553CC002F6B94 /* LoginRequest.swift */,
+				24120C50207553CC002F6B94 /* RegisterRequest.swift */,
+				24120C51207553CC002F6B94 /* SettingsRequest.swift */,
+				24120C52207553CC002F6B94 /* LocationRequest.swift */,
+				24120C53207553CC002F6B94 /* CarRequest.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		24120C54207553CC002F6B94 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				24120C55207553CC002F6B94 /* CommunityMessageRequest.swift */,
+			);
+			path = Community;
+			sourceTree = "<group>";
+		};
+		24120C6E20755447002F6B94 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				24120C37207553CC002F6B94 /* Model.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
 		};
 		OBJ_45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"RoadChatKit::RoadChatKitTests::Product" /* RoadChatKitTests.xctest */,
 				"RoadChatKit::RoadChatKit::Product" /* RoadChatKit.framework */,
 			);
 			name = Products;
@@ -228,7 +196,6 @@
 			children = (
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
-				OBJ_42 /* Tests */,
 				OBJ_45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -236,33 +203,12 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* Model */,
-				OBJ_26 /* Request */,
+				24120C6E20755447002F6B94 /* Protocol */,
+				24120C46207553CC002F6B94 /* RequestModel */,
+				24120C34207553CC002F6B94 /* StoreModel */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_8 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Chat */,
-				OBJ_13 /* Community */,
-				OBJ_15 /* Model.swift */,
-				OBJ_16 /* Traffic */,
-				OBJ_18 /* User */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		OBJ_9 /* Chat */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_10 /* Conversation.swift */,
-				OBJ_11 /* DirectMessage.swift */,
-				OBJ_12 /* Participation.swift */,
-			);
-			path = Chat;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -282,23 +228,6 @@
 			productName = RoadChatKit;
 			productReference = "RoadChatKit::RoadChatKit::Product" /* RoadChatKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		"RoadChatKit::RoadChatKitTests" /* RoadChatKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_55 /* Build configuration list for PBXNativeTarget "RoadChatKitTests" */;
-			buildPhases = (
-				OBJ_58 /* Sources */,
-				OBJ_60 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_62 /* PBXTargetDependency */,
-			);
-			name = RoadChatKitTests;
-			productName = RoadChatKitTests;
-			productReference = "RoadChatKit::RoadChatKitTests::Product" /* RoadChatKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"RoadChatKit::SwiftPMPackageDescription" /* RoadChatKitPackageDescription */ = {
 			isa = PBXNativeTarget;
@@ -335,9 +264,7 @@
 			projectRoot = "";
 			targets = (
 				"RoadChatKit::SwiftPMPackageDescription" /* RoadChatKitPackageDescription */,
-				"RoadChatKit::RoadChatKitTests" /* RoadChatKitTests */,
 				"RoadChatKit::RoadChatKit" /* RoadChatKit */,
-				"RoadChatKit::RoadChatKitPackageTests::ProductTarget" /* RoadChatKitPackageTests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,59 +278,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_58 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_59 /* RoadChatKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_68 /* Conversation.swift in Sources */,
-				OBJ_69 /* DirectMessage.swift in Sources */,
-				OBJ_70 /* Participation.swift in Sources */,
-				OBJ_71 /* CommunityMessage.swift in Sources */,
-				OBJ_72 /* Model.swift in Sources */,
-				OBJ_73 /* TrafficMessage.swift in Sources */,
-				OBJ_74 /* BearerToken.swift in Sources */,
-				OBJ_75 /* Car.swift in Sources */,
-				OBJ_76 /* Location.swift in Sources */,
-				OBJ_77 /* Privacy.swift in Sources */,
-				OBJ_78 /* Profile.swift in Sources */,
-				OBJ_79 /* Settings.swift in Sources */,
-				OBJ_80 /* User.swift in Sources */,
-				OBJ_81 /* ConversationRequest.swift in Sources */,
-				OBJ_82 /* DirectMessageRequest.swift in Sources */,
-				OBJ_83 /* CommunityMessageRequest.swift in Sources */,
-				OBJ_84 /* TrafficMessageRequest.swift in Sources */,
-				OBJ_85 /* CarRequest.swift in Sources */,
-				OBJ_86 /* LocationRequest.swift in Sources */,
-				OBJ_87 /* LoginRequest.swift in Sources */,
-				OBJ_88 /* PrivacyRequest.swift in Sources */,
-				OBJ_89 /* ProfileRequest.swift in Sources */,
-				OBJ_90 /* RegisterRequest.swift in Sources */,
-				OBJ_91 /* SettingsRequest.swift in Sources */,
+				24120C6B207553CC002F6B94 /* LocationRequest.swift in Sources */,
+				24120C5A207553CC002F6B94 /* DirectMessage.swift in Sources */,
+				24120C5F207553CC002F6B94 /* Profile.swift in Sources */,
+				24120C69207553CC002F6B94 /* RegisterRequest.swift in Sources */,
+				24120C68207553CC002F6B94 /* LoginRequest.swift in Sources */,
+				24120C5C207553CC002F6B94 /* BearerToken.swift in Sources */,
+				24120C58207553CC002F6B94 /* Conversation.swift in Sources */,
+				24120C59207553CC002F6B94 /* Participation.swift in Sources */,
+				24120C67207553CC002F6B94 /* ProfileRequest.swift in Sources */,
+				24120C56207553CC002F6B94 /* TrafficMessage.swift in Sources */,
+				24120C61207553CC002F6B94 /* Settings.swift in Sources */,
+				24120C6D207553CC002F6B94 /* CommunityMessageRequest.swift in Sources */,
+				24120C5E207553CC002F6B94 /* Car.swift in Sources */,
+				24120C6A207553CC002F6B94 /* SettingsRequest.swift in Sources */,
+				24120C65207553CC002F6B94 /* ConversationRequest.swift in Sources */,
+				24120C64207553CC002F6B94 /* DirectMessageRequest.swift in Sources */,
+				24120C5B207553CC002F6B94 /* Location.swift in Sources */,
+				24120C6C207553CC002F6B94 /* CarRequest.swift in Sources */,
+				24120C66207553CC002F6B94 /* PrivacyRequest.swift in Sources */,
+				24120C5D207553CC002F6B94 /* Privacy.swift in Sources */,
+				24120C57207553CC002F6B94 /* Model.swift in Sources */,
+				24120C62207553CC002F6B94 /* CommunityMessage.swift in Sources */,
+				24120C60207553CC002F6B94 /* User.swift in Sources */,
+				24120C63207553CC002F6B94 /* TrafficMessageRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "RoadChatKit::RoadChatKit" /* RoadChatKit */;
-			targetProxy = 24AED4A9204CC147002A1703 /* PBXContainerItemProxy */;
-		};
-		OBJ_97 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "RoadChatKit::RoadChatKitTests" /* RoadChatKitTests */;
-			targetProxy = 24AED4AA204CC148002A1703 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		OBJ_3 /* Debug */ = {
@@ -517,42 +423,6 @@
 			};
 			name = Release;
 		};
-		OBJ_56 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = RoadChatKit.xcodeproj/RoadChatKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = RoadChatKitTests;
-			};
-			name = Debug;
-		};
-		OBJ_57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = RoadChatKit.xcodeproj/RoadChatKitTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = RoadChatKitTests;
-			};
-			name = Release;
-		};
 		OBJ_65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,18 +467,6 @@
 			};
 			name = Release;
 		};
-		OBJ_95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -630,29 +488,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_55 /* Build configuration list for PBXNativeTarget "RoadChatKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_56 /* Debug */,
-				OBJ_57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		OBJ_64 /* Build configuration list for PBXNativeTarget "RoadChatKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_65 /* Debug */,
 				OBJ_66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_94 /* Build configuration list for PBXAggregateTarget "RoadChatKitPackageTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_95 /* Debug */,
-				OBJ_96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
