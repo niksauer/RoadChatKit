@@ -8,6 +8,7 @@
 import Foundation
 
 public struct CommunityMessageRequest: Codable {
+    public let title: String
     public let time: Date
     public let message: String
     
@@ -19,7 +20,8 @@ public struct CommunityMessageRequest: Codable {
     public let course: Double
     public let speed: Double
     
-    public init(time: Date, message: String, latitude: Double, longitude: Double, altitude: Double, horizontalAccuracy: Double, verticalAccuracy: Double, course: Double, speed: Double) {
+    public init(title: String, time: Date, message: String, latitude: Double, longitude: Double, altitude: Double, horizontalAccuracy: Double, verticalAccuracy: Double, course: Double, speed: Double) {
+        self.title = title
         self.time = time
         self.message = message
         self.latitude = latitude

@@ -11,18 +11,20 @@ public final class CommunityMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var locationID: Location.ID
+    public var title: String
     public var time: Date
     public var message: String
     
-    public init(senderID: User.ID, locationID: Location.ID, time: Date, message: String) {
+    public init(senderID: User.ID, locationID: Location.ID, title: String, time: Date, message: String) {
         self.senderID = senderID
         self.locationID = locationID
+        self.title = title
         self.time = time
         self.message = message
     }
     
     public convenience init(senderID: User.ID, locationID: Location.ID, communityRequest: CommunityMessageRequest) {
-        self.init(senderID: senderID, locationID: locationID, time: communityRequest.time, message: communityRequest.message)
+        self.init(senderID: senderID, locationID: locationID, title: communityRequest.title, time: communityRequest.time, message: communityRequest.message)
     }
 }
 
@@ -31,6 +33,7 @@ public extension CommunityMessage {
         public let id: CommunityMessage.ID
         public let senderID: User.ID
         public let locationID: Location.ID
+        public let title: String
         public let time: Date
         public let message: String
         public let upvotes: Int
@@ -43,6 +46,7 @@ public extension CommunityMessage {
             self.id = id
             self.senderID = communityMessage.senderID
             self.locationID = communityMessage.locationID
+            self.title = communityMessage.title
             self.time = communityMessage.time
             self.message = communityMessage.message
             self.upvotes = upvotes
