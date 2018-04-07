@@ -29,17 +29,22 @@ public final class TrafficMessage: StoredModel {
 }
 
 public extension TrafficMessage {
+    public func publicTrafficMessage(validations: Int, upvotes: Int, karma: KarmaType?) throws -> PublicTrafficMessage {
+        return try PublicTrafficMessage(trafficMessage: self, upvotes: upvotes, validations: validations, karma: karma)
+    }
+    
     public struct PublicTrafficMessage: Codable {
-        public var id: TrafficMessage.ID
-        public var senderID: User.ID
-        public var locationID: Location.ID
-        public var type: String
-        public var time: Date
-        public var message: String?
-        public var validations: Int
-        public var upvotes: Int
+        public let id: TrafficMessage.ID
+        public let senderID: User.ID
+        public let locationID: Location.ID
+        public let type: String
+        public let time: Date
+        public let message: String?
+        public let validations: Int
+        public let upvotes: Int
+        public let karma: KarmaType?
         
-        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int) throws {
+        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int, karma: KarmaType?) throws {
             guard let id = trafficMessage.id else {
                 throw StoredModelError.missingID
             }
@@ -52,6 +57,7 @@ public extension TrafficMessage {
             self.message = trafficMessage.message
             self.upvotes = upvotes
             self.validations = validations
+            self.karma = karma
         }
     }
 }

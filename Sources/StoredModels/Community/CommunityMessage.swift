@@ -29,6 +29,10 @@ public final class CommunityMessage: StoredModel {
 }
 
 public extension CommunityMessage {
+    public func publicCommunityMessage(upvotes: Int, karma: KarmaType?) throws -> PublicCommunityMessage {
+        return try PublicCommunityMessage(communityMessage: self, upvotes: upvotes, karma: karma)
+    }
+    
     public struct PublicCommunityMessage: Codable {
         public let id: CommunityMessage.ID
         public let senderID: User.ID
@@ -37,8 +41,9 @@ public extension CommunityMessage {
         public let time: Date
         public let message: String?
         public let upvotes: Int
+        public let karma: KarmaType?
         
-        public init(communityMessage: CommunityMessage, upvotes: Int) throws {
+        public init(communityMessage: CommunityMessage, upvotes: Int, karma: KarmaType?) throws {
             guard let id = communityMessage.id else {
                 throw StoredModelError.missingID
             }
@@ -50,6 +55,7 @@ public extension CommunityMessage {
             self.time = communityMessage.time
             self.message = communityMessage.message
             self.upvotes = upvotes
+            self.karma = karma
         }
     }
 }

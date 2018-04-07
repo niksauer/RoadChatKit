@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B443EF207991E70062834C /* TrafficType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443EE207991E70062834C /* TrafficType.swift */; };
+		24B443F1207991FE0062834C /* KarmaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443F0207991FE0062834C /* KarmaType.swift */; };
 		OBJ_51 /* StoredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* StoredModel.swift */; };
 		OBJ_52 /* ConversationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ConversationRequest.swift */; };
 		OBJ_53 /* DirectMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DirectMessageRequest.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B443EE207991E70062834C /* TrafficType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficType.swift; sourceTree = "<group>"; };
+		24B443F0207991FE0062834C /* KarmaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaType.swift; sourceTree = "<group>"; };
 		OBJ_12 /* ConversationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRequest.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DirectMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageRequest.swift; sourceTree = "<group>"; };
 		OBJ_15 /* CommunityMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMessageRequest.swift; sourceTree = "<group>"; };
@@ -190,7 +194,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -198,12 +202,13 @@
 				OBJ_43 /* Tests */,
 				OBJ_44 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				24B443F0207991FE0062834C /* KarmaType.swift */,
+				24B443EE207991E70062834C /* TrafficType.swift */,
 				OBJ_8 /* Protocols */,
 				OBJ_10 /* RequestModels */,
 				OBJ_26 /* StoredModels */,
@@ -267,7 +272,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -283,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				24B443F1207991FE0062834C /* KarmaType.swift in Sources */,
 				OBJ_51 /* StoredModel.swift in Sources */,
 				OBJ_52 /* ConversationRequest.swift in Sources */,
 				OBJ_53 /* DirectMessageRequest.swift in Sources */,
@@ -294,6 +300,7 @@
 				OBJ_59 /* PrivacyRequest.swift in Sources */,
 				OBJ_60 /* ProfileRequest.swift in Sources */,
 				OBJ_61 /* RegisterRequest.swift in Sources */,
+				24B443EF207991E70062834C /* TrafficType.swift in Sources */,
 				OBJ_62 /* SettingsRequest.swift in Sources */,
 				OBJ_63 /* Conversation.swift in Sources */,
 				OBJ_64 /* DirectMessage.swift in Sources */,

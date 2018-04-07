@@ -7,10 +7,6 @@
 
 import Foundation
 
-public enum TrafficType: String {
-    case jam, accident, danger, detour
-}
-
 public struct TrafficMessageRequest: Codable {
     public let type: String
     public let time: Date
