@@ -13,9 +13,9 @@ public final class CommunityMessage: StoredModel {
     public var locationID: Location.ID
     public var title: String
     public var time: Date
-    public var message: String
+    public var message: String?
     
-    public init(senderID: User.ID, locationID: Location.ID, title: String, time: Date, message: String) {
+    public init(senderID: User.ID, locationID: Location.ID, title: String, time: Date, message: String?) {
         self.senderID = senderID
         self.locationID = locationID
         self.title = title
@@ -35,7 +35,7 @@ public extension CommunityMessage {
         public let locationID: Location.ID
         public let title: String
         public let time: Date
-        public let message: String
+        public let message: String?
         public let upvotes: Int
         
         public init(communityMessage: CommunityMessage, upvotes: Int) throws {
