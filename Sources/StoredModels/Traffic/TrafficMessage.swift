@@ -29,7 +29,7 @@ public final class TrafficMessage: StoredModel {
 }
 
 public extension TrafficMessage {
-    public func publicTrafficMessage(validations: Int, upvotes: Int, karma: KarmaType?) throws -> PublicTrafficMessage {
+    public func publicTrafficMessage(validations: Int, upvotes: Int, karma: KarmaType) throws -> PublicTrafficMessage {
         return try PublicTrafficMessage(trafficMessage: self, upvotes: upvotes, validations: validations, karma: karma)
     }
     
@@ -42,9 +42,9 @@ public extension TrafficMessage {
         public let message: String?
         public let validations: Int
         public let upvotes: Int
-        public let karma: KarmaType?
+        public let karma: KarmaType
         
-        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int, karma: KarmaType?) throws {
+        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int, karma: KarmaType) throws {
             guard let id = trafficMessage.id else {
                 throw StoredModelError.missingID
             }

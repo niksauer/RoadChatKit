@@ -29,7 +29,7 @@ public final class CommunityMessage: StoredModel {
 }
 
 public extension CommunityMessage {
-    public func publicCommunityMessage(upvotes: Int, karma: KarmaType?) throws -> PublicCommunityMessage {
+    public func publicCommunityMessage(upvotes: Int, karma: KarmaType) throws -> PublicCommunityMessage {
         return try PublicCommunityMessage(communityMessage: self, upvotes: upvotes, karma: karma)
     }
     
@@ -41,9 +41,9 @@ public extension CommunityMessage {
         public let time: Date
         public let message: String?
         public let upvotes: Int
-        public let karma: KarmaType?
+        public let karma: KarmaType
         
-        public init(communityMessage: CommunityMessage, upvotes: Int, karma: KarmaType?) throws {
+        public init(communityMessage: CommunityMessage, upvotes: Int, karma: KarmaType) throws {
             guard let id = communityMessage.id else {
                 throw StoredModelError.missingID
             }
