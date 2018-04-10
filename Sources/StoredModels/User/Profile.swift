@@ -13,7 +13,7 @@ public final class Profile: StoredModel {
     public var firstName: String
     public var lastName: String
     public var birth: Date
-    public var sex: String?
+    public var sex: SexType?
     public var biography: String?
     public var streetName: String?
     public var streetNumber: Int?
@@ -21,7 +21,7 @@ public final class Profile: StoredModel {
     public var country: String?
     public var photoURL: URL?
     
-    public init(userID: User.ID, firstName: String, lastName: String, birth: Date, sex: String?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?, profilePhotoURL: URL?) {
+    public init(userID: User.ID, firstName: String, lastName: String, birth: Date, sex: SexType?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?, profilePhotoURL: URL?) {
         self.userID = userID
         self.firstName = firstName
         self.lastName = lastName
@@ -49,7 +49,7 @@ public extension Profile {
         public let firstName: String?
         public let lastName: String?
         public let birth: Date?
-        public let sex: String?
+        public let sex: SexType?
         public let biography: String?
         public let streetName: String?
         public let streetNumber: Int?

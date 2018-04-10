@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24B443EF207991E70062834C /* TrafficType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443EE207991E70062834C /* TrafficType.swift */; };
 		24B443F1207991FE0062834C /* KarmaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443F0207991FE0062834C /* KarmaType.swift */; };
+		24FE0063207D5F7200F0D657 /* SexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0062207D5F7200F0D657 /* SexType.swift */; };
 		OBJ_51 /* StoredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* StoredModel.swift */; };
 		OBJ_52 /* ConversationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ConversationRequest.swift */; };
 		OBJ_53 /* DirectMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DirectMessageRequest.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		24B443EE207991E70062834C /* TrafficType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficType.swift; sourceTree = "<group>"; };
 		24B443F0207991FE0062834C /* KarmaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaType.swift; sourceTree = "<group>"; };
+		24FE0062207D5F7200F0D657 /* SexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexType.swift; sourceTree = "<group>"; };
 		OBJ_12 /* ConversationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRequest.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DirectMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageRequest.swift; sourceTree = "<group>"; };
 		OBJ_15 /* CommunityMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMessageRequest.swift; sourceTree = "<group>"; };
@@ -78,6 +80,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24FE0064207D5F9400F0D657 /* OptionTypes */ = {
+			isa = PBXGroup;
+			children = (
+				24FE0062207D5F7200F0D657 /* SexType.swift */,
+				24B443F0207991FE0062834C /* KarmaType.swift */,
+				24B443EE207991E70062834C /* TrafficType.swift */,
+			);
+			path = OptionTypes;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* RequestModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,9 +219,8 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				24B443F0207991FE0062834C /* KarmaType.swift */,
-				24B443EE207991E70062834C /* TrafficType.swift */,
 				OBJ_8 /* Protocols */,
+				24FE0064207D5F9400F0D657 /* OptionTypes */,
 				OBJ_10 /* RequestModels */,
 				OBJ_26 /* StoredModels */,
 			);
@@ -290,6 +301,7 @@
 			files = (
 				24B443F1207991FE0062834C /* KarmaType.swift in Sources */,
 				OBJ_51 /* StoredModel.swift in Sources */,
+				24FE0063207D5F7200F0D657 /* SexType.swift in Sources */,
 				OBJ_52 /* ConversationRequest.swift in Sources */,
 				OBJ_53 /* DirectMessageRequest.swift in Sources */,
 				OBJ_54 /* CommunityMessageRequest.swift in Sources */,

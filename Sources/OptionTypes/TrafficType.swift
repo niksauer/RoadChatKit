@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum TrafficType: String {
+public enum TrafficType: String, Codable {
     case jam, accident, danger, detour
 }

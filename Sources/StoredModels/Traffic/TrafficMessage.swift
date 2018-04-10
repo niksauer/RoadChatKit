@@ -11,11 +11,11 @@ public final class TrafficMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var locationID: Location.ID
-    public var type: String
+    public var type: TrafficType
     public var time: Date
     public var message: String?
     
-    public init(senderID: User.ID, locationID: User.ID, type: String, time: Date, message: String?) {
+    public init(senderID: User.ID, locationID: User.ID, type: TrafficType, time: Date, message: String?) {
         self.senderID = senderID
         self.locationID = locationID
         self.type = type
@@ -37,7 +37,7 @@ public extension TrafficMessage {
         public let id: TrafficMessage.ID
         public let senderID: User.ID
         public let locationID: Location.ID
-        public let type: String
+        public let type: TrafficType
         public let time: Date
         public let message: String?
         public let validations: Int

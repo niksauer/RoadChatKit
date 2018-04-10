@@ -8,7 +8,7 @@
 import Foundation
 
 public struct TrafficMessageRequest: Codable {
-    public let type: String
+    public let type: TrafficType
     public let time: Date
     public let message: String?
     
@@ -21,7 +21,7 @@ public struct TrafficMessageRequest: Codable {
     public let speed: Double
     
     public init(type: TrafficType, time: Date, message: String?, latitude: Double, longitude: Double, altitude: Double, horizontalAccuracy: Double, verticalAccuracy: Double, course: Double, speed: Double) {
-        self.type = type.rawValue
+        self.type = type
         self.time = time
         self.message = message
         self.latitude = latitude
