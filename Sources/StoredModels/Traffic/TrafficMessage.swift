@@ -11,14 +11,14 @@ public final class TrafficMessage: StoredModel {
     public var id: Int?
     public var senderID: User.ID
     public var locationID: Location.ID
-    public var type: TrafficType
+    public var type: TrafficType.RawValue
     public var time: Date
     public var message: String?
     
     public init(senderID: User.ID, locationID: User.ID, type: TrafficType, time: Date, message: String?) {
         self.senderID = senderID
         self.locationID = locationID
-        self.type = type
+        self.type = type.rawValue
         self.time = time
         self.message = message
     }
@@ -52,7 +52,7 @@ public extension TrafficMessage {
             self.id = id
             self.senderID = trafficMessage.senderID
             self.locationID = trafficMessage.locationID
-            self.type = trafficMessage.type
+            self.type = TrafficType(rawValue: trafficMessage.type)!
             self.time = trafficMessage.time
             self.message = trafficMessage.message
             self.upvotes = upvotes

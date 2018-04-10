@@ -13,7 +13,7 @@ public final class Profile: StoredModel {
     public var firstName: String
     public var lastName: String
     public var birth: Date
-    public var sex: SexType?
+    public var sex: SexType.RawValue?
     public var biography: String?
     public var streetName: String?
     public var streetNumber: Int?
@@ -26,7 +26,7 @@ public final class Profile: StoredModel {
         self.firstName = firstName
         self.lastName = lastName
         self.birth = birth
-        self.sex = sex
+        self.sex = sex?.rawValue
         self.biography = biography
         self.streetName = streetName
         self.streetNumber = streetNumber
@@ -78,8 +78,8 @@ public extension Profile {
                 self.birth = nil
             }
             
-            if privacy.showSex || isOwner {
-                self.sex = profile.sex
+            if let sex = profile.sex, privacy.showSex || isOwner {
+                self.sex = SexType(rawValue: sex)!
             } else {
                 self.sex = nil
             }

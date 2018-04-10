@@ -33,18 +33,11 @@ public extension User {
     
     public struct PublicUser: Codable {
         public let id: User.ID
-        public var email: String?
+        public let email: String?
         public let username: String
         public let registry: Date
         
-        public var timestamp: Date?
-        public var latitude: Double?
-        public var longitude: Double?
-        public var altitude: Double?
-        public var horizontalAccuracy: Double?
-        public var verticalAccuracy: Double?
-        public var course: Double?
-        public var speed: Double?
+        public let location: Location.PublicLocation?
         
         public init(user: User, isOwner: Bool) throws {
             guard let id = user.id else {
@@ -52,26 +45,23 @@ public extension User {
             }
             
             self.id = id
-            
-            if isOwner {
-                self.email = user.email
-            }
-            
+            self.email = isOwner ? user.email : nil
             self.username = user.username
             self.registry = user.registry
+            self.location = nil
         }
         
         public init(user: User, location: Location) throws {
-            try self.init(user: user, isOwner: false)
+            guard let id = user.id else {
+                throw StoredModelError.missingID
+            }
             
-            self.timestamp = location.timestamp
-            self.latitude = location.latitude
-            self.longitude = location.longitude
-            self.altitude = location.altitude
-            self.horizontalAccuracy = location.horizontalAccuracy
-            self.verticalAccuracy = location.verticalAccuracy
-            self.course = location.course
-            self.speed = location.speed
+            self.id = id
+            self.email = nil
+            self.username = user.username
+            self.registry = user.registry
+            
+            self.location = location.publicLocation()
         }
     }
 }
