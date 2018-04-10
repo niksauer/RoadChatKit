@@ -11,7 +11,7 @@ public struct ProfileRequest: Codable {
     public let firstName: String
     public let lastName: String
     public let birth: Date
-    public let sex: SexType?
+    public let sex: SexType.RawValue?
     public let biography: String?
     public let streetName: String?
     public let streetNumber: Int?
@@ -22,7 +22,7 @@ public struct ProfileRequest: Codable {
         self.firstName = firstName
         self.lastName = lastName
         self.birth = birth
-        self.sex = sex
+        self.sex = sex?.rawValue
         self.biography = biography
         self.streetName = streetName
         self.streetNumber = streetNumber

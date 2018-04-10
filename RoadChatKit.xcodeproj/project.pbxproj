@@ -11,6 +11,7 @@
 		24B443F1207991FE0062834C /* KarmaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443F0207991FE0062834C /* KarmaType.swift */; };
 		24FE0063207D5F7200F0D657 /* SexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0062207D5F7200F0D657 /* SexType.swift */; };
 		24FE026A207D630E00F0D657 /* ApprovalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0269207D630E00F0D657 /* ApprovalType.swift */; };
+		24FE0480207D7EA500F0D657 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE047F207D7EA500F0D657 /* RequestError.swift */; };
 		OBJ_51 /* StoredModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* StoredModel.swift */; };
 		OBJ_52 /* ConversationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ConversationRequest.swift */; };
 		OBJ_53 /* DirectMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DirectMessageRequest.swift */; };
@@ -43,6 +44,7 @@
 		24B443F0207991FE0062834C /* KarmaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaType.swift; sourceTree = "<group>"; };
 		24FE0062207D5F7200F0D657 /* SexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexType.swift; sourceTree = "<group>"; };
 		24FE0269207D630E00F0D657 /* ApprovalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalType.swift; sourceTree = "<group>"; };
+		24FE047F207D7EA500F0D657 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
 		OBJ_12 /* ConversationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationRequest.swift; sourceTree = "<group>"; };
 		OBJ_13 /* DirectMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectMessageRequest.swift; sourceTree = "<group>"; };
 		OBJ_15 /* CommunityMessageRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMessageRequest.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				24FE047F207D7EA500F0D657 /* RequestError.swift */,
 				OBJ_8 /* Protocols */,
 				24FE0064207D5F9400F0D657 /* OptionTypes */,
 				OBJ_10 /* RequestModels */,
@@ -317,6 +320,7 @@
 				OBJ_61 /* RegisterRequest.swift in Sources */,
 				24B443EF207991E70062834C /* TrafficType.swift in Sources */,
 				OBJ_62 /* SettingsRequest.swift in Sources */,
+				24FE0480207D7EA500F0D657 /* RequestError.swift in Sources */,
 				OBJ_63 /* Conversation.swift in Sources */,
 				OBJ_64 /* DirectMessage.swift in Sources */,
 				OBJ_65 /* Participation.swift in Sources */,

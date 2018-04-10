@@ -35,8 +35,20 @@ public final class Profile: StoredModel {
         self.photoURL = profilePhotoURL
     }
     
-    public convenience init(userID: User.ID, profileRequest request: ProfileRequest) {
-        self.init(userID: userID, firstName: request.firstName, lastName: request.lastName, birth: request.birth, sex: request.sex, biography: request.biography, streetName: request.streetName, streetNumber: request.streetNumber, postalCode: request.postalCode, country: request.country, profilePhotoURL: nil)
+    public convenience init(userID: User.ID, profileRequest request: ProfileRequest) throws {
+        let sex: SexType?
+    
+        if let requestedSex = request.sex {
+            guard let sexType = SexType(rawValue: requestedSex) else {
+                throw RequestError.invalidSexType
+            }
+            
+            sex = sexType
+        } else {
+            sex = nil
+        }
+        
+        self.init(userID: userID, firstName: request.firstName, lastName: request.lastName, birth: request.birth, sex: sex, biography: request.biography, streetName: request.streetName, streetNumber: request.streetNumber, postalCode: request.postalCode, country: request.country, profilePhotoURL: nil)
     }
 }
 

@@ -23,8 +23,12 @@ public final class TrafficMessage: StoredModel {
         self.message = message
     }
     
-    public convenience init(senderID: User.ID, locationID: Location.ID, trafficRequest: TrafficMessageRequest) {
-        self.init(senderID: senderID, locationID: locationID, type: trafficRequest.type, time: trafficRequest.time, message: trafficRequest.message)
+    public convenience init(senderID: User.ID, locationID: Location.ID, trafficRequest: TrafficMessageRequest) throws {
+        guard let type = TrafficType(rawValue: trafficRequest.type) else {
+            throw RequestError.invalidTrafficType
+        }
+  
+        self.init(senderID: senderID, locationID: locationID, type: type, time: trafficRequest.time, message: trafficRequest.message)
     }
 }
 
