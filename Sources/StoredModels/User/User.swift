@@ -23,12 +23,8 @@ public final class User: StoredModel {
 }
 
 public extension User {
-    public func publicUser(isOwner: Bool) throws -> PublicUser {
-        return try PublicUser(user: self, isOwner: isOwner)
-    }
-    
-    public func publicUser(location: Location) throws -> PublicUser {
-        return try PublicUser(user: self, location: location)
+    public func publicUser(isOwner: Bool, location: Location?) throws -> PublicUser {
+        return try PublicUser(user: self, isOwner: isOwner, location: location)
     }
     
     public struct PublicUser: Codable {
@@ -36,10 +32,9 @@ public extension User {
         public let email: String?
         public let username: String
         public let registry: Date
-        
         public let location: Location.PublicLocation?
         
-        public init(user: User, isOwner: Bool) throws {
+        public init(user: User, isOwner: Bool, location: Location?) throws {
             guard let id = user.id else {
                 throw StoredModelError.missingID
             }
@@ -48,20 +43,8 @@ public extension User {
             self.email = isOwner ? user.email : nil
             self.username = user.username
             self.registry = user.registry
-            self.location = nil
-        }
-        
-        public init(user: User, location: Location) throws {
-            guard let id = user.id else {
-                throw StoredModelError.missingID
-            }
             
-            self.id = id
-            self.email = nil
-            self.username = user.username
-            self.registry = user.registry
-            
-            self.location = location.publicLocation()
+            self.location = location?.publicLocation()
         }
     }
 }

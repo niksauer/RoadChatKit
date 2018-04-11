@@ -33,35 +33,35 @@ public final class TrafficMessage: StoredModel {
 }
 
 public extension TrafficMessage {
-    public func publicTrafficMessage(validations: Int, upvotes: Int, karma: KarmaType) throws -> PublicTrafficMessage {
-        return try PublicTrafficMessage(trafficMessage: self, upvotes: upvotes, validations: validations, karma: karma)
+    public func publicTrafficMessage(validations: Int, upvotes: Int, karma: KarmaType, location: Location) throws -> PublicTrafficMessage {
+        return try PublicTrafficMessage(trafficMessage: self, upvotes: upvotes, validations: validations, karma: karma, location: location)
     }
     
     public struct PublicTrafficMessage: Codable {
         public let id: TrafficMessage.ID
         public let senderID: User.ID
-        public let locationID: Location.ID
         public let type: TrafficType
         public let time: Date
         public let message: String?
         public let validations: Int
         public let upvotes: Int
         public let karma: KarmaType
+        public let location: Location.PublicLocation
         
-        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int, karma: KarmaType) throws {
+        public init(trafficMessage: TrafficMessage, upvotes: Int, validations: Int, karma: KarmaType, location: Location) throws {
             guard let id = trafficMessage.id else {
                 throw StoredModelError.missingID
             }
             
             self.id = id
             self.senderID = trafficMessage.senderID
-            self.locationID = trafficMessage.locationID
             self.type = TrafficType(rawValue: trafficMessage.type)!
             self.time = trafficMessage.time
             self.message = trafficMessage.message
             self.upvotes = upvotes
             self.validations = validations
             self.karma = karma
+            self.location = location.publicLocation()
         }
     }
 }

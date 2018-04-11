@@ -29,33 +29,33 @@ public final class CommunityMessage: StoredModel {
 }
 
 public extension CommunityMessage {
-    public func publicCommunityMessage(upvotes: Int, karma: KarmaType) throws -> PublicCommunityMessage {
-        return try PublicCommunityMessage(communityMessage: self, upvotes: upvotes, karma: karma)
+    public func publicCommunityMessage(upvotes: Int, karma: KarmaType, location: Location) throws -> PublicCommunityMessage {
+        return try PublicCommunityMessage(communityMessage: self, upvotes: upvotes, karma: karma, location: location)
     }
     
     public struct PublicCommunityMessage: Codable {
         public let id: CommunityMessage.ID
         public let senderID: User.ID
-        public let locationID: Location.ID
         public let title: String
         public let time: Date
         public let message: String?
         public let upvotes: Int
         public let karma: KarmaType
+        public let location: Location.PublicLocation
         
-        public init(communityMessage: CommunityMessage, upvotes: Int, karma: KarmaType) throws {
+        public init(communityMessage: CommunityMessage, upvotes: Int, karma: KarmaType, location: Location) throws {
             guard let id = communityMessage.id else {
                 throw StoredModelError.missingID
             }
             
             self.id = id
             self.senderID = communityMessage.senderID
-            self.locationID = communityMessage.locationID
             self.title = communityMessage.title
             self.time = communityMessage.time
             self.message = communityMessage.message
             self.upvotes = upvotes
             self.karma = karma
+            self.location = location.publicLocation()
         }
     }
 }
