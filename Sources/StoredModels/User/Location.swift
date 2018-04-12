@@ -32,14 +32,6 @@ public final class Location: StoredModel {
     public convenience init(locationRequest request: LocationRequest) {
         self.init(timestamp: request.time, latitude: request.latitude, longitude: request.longitude, altitude: request.altitude, horizontalAccuracy: request.horizontalAccuracy, verticalAccuracy: request.verticalAccuracy, course: request.course, speed: request.speed)
     }
-    
-    public convenience init(trafficMessageRequest request: TrafficMessageRequest) {
-        self.init(timestamp: request.time, latitude: request.latitude, longitude: request.longitude, altitude: request.altitude, horizontalAccuracy: request.horizontalAccuracy, verticalAccuracy: request.verticalAccuracy, course: request.course, speed: request.speed)
-    }
-    
-    public convenience init(communityMessageRequest request: CommunityMessageRequest) {
-        self.init(timestamp: request.time, latitude: request.latitude, longitude: request.longitude, altitude: request.altitude, horizontalAccuracy: request.horizontalAccuracy, verticalAccuracy: request.verticalAccuracy, course: request.course, speed: request.speed)
-    }
 }
 
 public extension Location {
