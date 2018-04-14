@@ -10,5 +10,5 @@ import Foundation
 public enum SexType: String, Codable {
     case male, female, other
     
-    static var allCases: [SexType] = [.male, .female, .other]
+    public static var allCases: [SexType] = [.male, .female, .other]
 }

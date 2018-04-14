@@ -12,5 +12,5 @@ public enum KarmaType: Int, Codable {
     case neutral = 0
     case downvote = -1
     
-    static var allCases: [KarmaType] = [.upvote, .neutral, .downvote]
+    public static var allCases: [KarmaType] = [.upvote, .neutral, .downvote]
 }
