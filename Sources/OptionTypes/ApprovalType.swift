@@ -11,4 +11,6 @@ public enum ApprovalType: String, Codable {
     case requested
     case accepted
     case denied
+    
+    static var allCases: [ApprovalType] = [.requested, .accepted, .denied]
 }
