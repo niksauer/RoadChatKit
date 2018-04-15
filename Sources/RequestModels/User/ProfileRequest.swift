@@ -16,9 +16,10 @@ public struct ProfileRequest: Codable {
     public let streetName: String?
     public let streetNumber: Int?
     public let postalCode: Int?
+    public let city: String?
     public let country: String?
     
-    public init(firstName: String, lastName: String, birth: Date, sex: SexType?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?) {
+    public init(firstName: String, lastName: String, birth: Date, sex: SexType?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, city: String?, country: String?) {
         self.firstName = firstName
         self.lastName = lastName
         self.birth = birth
@@ -27,6 +28,7 @@ public struct ProfileRequest: Codable {
         self.streetName = streetName
         self.streetNumber = streetNumber
         self.postalCode = postalCode
+        self.city = city
         self.country = country
     }
     
