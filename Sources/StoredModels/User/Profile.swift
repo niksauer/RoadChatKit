@@ -18,10 +18,11 @@ public final class Profile: StoredModel {
     public var streetName: String?
     public var streetNumber: Int?
     public var postalCode: Int?
+    public var city: String?
     public var country: String?
     public var photoURL: URL?
     
-    public init(userID: User.ID, firstName: String, lastName: String, birth: Date, sex: SexType?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, country: String?, profilePhotoURL: URL?) {
+    public init(userID: User.ID, firstName: String, lastName: String, birth: Date, sex: SexType?, biography: String?, streetName: String?, streetNumber: Int?, postalCode: Int?, city: String?, country: String?, profilePhotoURL: URL?) {
         self.userID = userID
         self.firstName = firstName
         self.lastName = lastName
@@ -31,6 +32,7 @@ public final class Profile: StoredModel {
         self.streetName = streetName
         self.streetNumber = streetNumber
         self.postalCode = postalCode
+        self.city = city
         self.country = country
         self.photoURL = profilePhotoURL
     }
@@ -48,7 +50,7 @@ public final class Profile: StoredModel {
             sex = nil
         }
         
-        self.init(userID: userID, firstName: request.firstName, lastName: request.lastName, birth: request.birth, sex: sex, biography: request.biography, streetName: request.streetName, streetNumber: request.streetNumber, postalCode: request.postalCode, country: request.country, profilePhotoURL: nil)
+        self.init(userID: userID, firstName: request.firstName, lastName: request.lastName, birth: request.birth, sex: sex, biography: request.biography, streetName: request.streetName, streetNumber: request.streetNumber, postalCode: request.postalCode, city: request.city, country: request.country, profilePhotoURL: nil)
     }
 }
 
@@ -66,6 +68,7 @@ public extension Profile {
         public let streetName: String?
         public let streetNumber: Int?
         public let postalCode: Int?
+        public let city: String?
         public let country: String?
         public let photoURL: URL?
         
@@ -106,11 +109,13 @@ public extension Profile {
                 self.streetName = profile.streetName
                 self.streetNumber = profile.streetNumber
                 self.postalCode = profile.postalCode
+                self.city = profile.city
                 self.country = profile.country
             } else {
                 self.streetName = nil
                 self.streetNumber = nil
                 self.postalCode = nil
+                self.city = nil
                 self.country = nil
             }
             
