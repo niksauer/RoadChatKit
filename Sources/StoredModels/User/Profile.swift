@@ -105,17 +105,25 @@ public extension Profile {
                 self.biography = nil
             }
             
-            if privacy.showAddress || isOwner {
+            if privacy.showStreet || isOwner {
                 self.streetName = profile.streetName
                 self.streetNumber = profile.streetNumber
-                self.postalCode = profile.postalCode
-                self.city = profile.city
-                self.country = profile.country
             } else {
                 self.streetName = nil
                 self.streetNumber = nil
+            }
+            
+            if privacy.showCity || isOwner {
+                self.postalCode = profile.postalCode
+                self.city = profile.city
+            } else {
                 self.postalCode = nil
                 self.city = nil
+            }
+            
+            if privacy.showCountry || isOwner {
+                self.country = profile.country
+            } else {
                 self.country = nil
             }
             
