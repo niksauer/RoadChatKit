@@ -14,9 +14,9 @@ public final class Car: StoredModel {
     public var model: String
     public var production: Date
     public var performance: Int?
-    public var color: Int?
+    public var color: String?
     
-    public init(userID: User.ID, manufacturer: String, model: String, production: Date, performance: Int?, color: Int?) {
+    public init(userID: User.ID, manufacturer: String, model: String, production: Date, performance: Int?, color: String?) {
         self.userID = userID
         self.manufacturer = manufacturer
         self.model = model
@@ -42,7 +42,7 @@ public extension Car {
         public let model: String
         public let production: Date
         public let performance: Int?
-        public let color: Int?
+        public let color: String?
         
         public init(car: Car) throws {
             guard let id = car.id else {

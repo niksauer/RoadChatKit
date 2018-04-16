@@ -12,9 +12,9 @@ public struct CarRequest: Codable {
     public let model: String
     public let production: Date
     public let performance: Int?
-    public let color: Int?
+    public let color: String?
     
-    public init(manufacturer: String, model: String, production: Date, performance: Int?, color: Int?) {
+    public init(manufacturer: String, model: String, production: Date, performance: Int?, color: String?) {
         self.manufacturer = manufacturer
         self.model = model
         self.production = production
