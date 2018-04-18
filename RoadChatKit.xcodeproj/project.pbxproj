@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		24B443EF207991E70062834C /* TrafficType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443EE207991E70062834C /* TrafficType.swift */; };
 		24B443F1207991FE0062834C /* KarmaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443F0207991FE0062834C /* KarmaType.swift */; };
+		24EB88952087A9C400B7A285 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB88942087A9C400B7A285 /* UserRequest.swift */; };
 		24FE0063207D5F7200F0D657 /* SexType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0062207D5F7200F0D657 /* SexType.swift */; };
 		24FE026A207D630E00F0D657 /* ApprovalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE0269207D630E00F0D657 /* ApprovalType.swift */; };
 		24FE0480207D7EA500F0D657 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE047F207D7EA500F0D657 /* RequestError.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		24B443EE207991E70062834C /* TrafficType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficType.swift; sourceTree = "<group>"; };
 		24B443F0207991FE0062834C /* KarmaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaType.swift; sourceTree = "<group>"; };
+		24EB88942087A9C400B7A285 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
 		24FE0062207D5F7200F0D657 /* SexType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexType.swift; sourceTree = "<group>"; };
 		24FE0269207D630E00F0D657 /* ApprovalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovalType.swift; sourceTree = "<group>"; };
 		24FE047F207D7EA500F0D657 /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_19 /* CarRequest.swift */,
+				24EB88942087A9C400B7A285 /* UserRequest.swift */,
 				OBJ_20 /* LocationRequest.swift */,
 				OBJ_21 /* LoginRequest.swift */,
 				OBJ_22 /* PrivacyRequest.swift */,
@@ -313,6 +316,7 @@
 				OBJ_54 /* CommunityMessageRequest.swift in Sources */,
 				OBJ_55 /* TrafficMessageRequest.swift in Sources */,
 				OBJ_56 /* CarRequest.swift in Sources */,
+				24EB88952087A9C400B7A285 /* UserRequest.swift in Sources */,
 				OBJ_57 /* LocationRequest.swift in Sources */,
 				OBJ_58 /* LoginRequest.swift in Sources */,
 				OBJ_59 /* PrivacyRequest.swift in Sources */,
