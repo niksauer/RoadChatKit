@@ -12,10 +12,10 @@ public final class User: StoredModel {
     public var locationID: Location.ID?
     public var email: String
     public var username: String
-    public var password: Data
+    public var password: String
     public var registry: Date = Date()
     
-    public init(email: String, username: String, password: Data) {
+    public init(email: String, username: String, password: String) {
         self.email = email
         self.username = username
         self.password = password
