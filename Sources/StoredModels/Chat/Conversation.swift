@@ -10,7 +10,7 @@ import Foundation
 public final class Conversation: StoredModel {
     public var id: Int?
     public var creatorID: User.ID
-    public var title: String
+    public var title: String?
     public var creation: Date = Date()
     
     public init(creatorID: User.ID, title: String) {
@@ -27,7 +27,7 @@ public extension Conversation {
     public struct PublicConversation: Codable {
         public let id: Conversation.ID
         public let creatorID: User.ID
-        public let title: String
+        public let title: String?
         public let creation: Date
         public let newestMessage: DirectMessage.PublicDirectMessage?
         
