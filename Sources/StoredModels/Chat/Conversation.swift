@@ -13,7 +13,7 @@ public final class Conversation: StoredModel {
     public var title: String?
     public var creation: Date = Date()
     
-    public init(creatorID: User.ID, title: String) {
+    public init(creatorID: User.ID, title: String?) {
         self.creatorID = creatorID
         self.title = title
     }
