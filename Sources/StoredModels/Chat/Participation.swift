@@ -28,17 +28,17 @@ public final class Participation: StoredModel {
 }
 
 public extension Participation {
-    public func publicParticipant() -> PublicParticipant {
-        return PublicParticipant(participation: self)
+    public func publicParticipant(user: User.PublicUser) -> PublicParticipant {
+        return PublicParticipant(participation: self, user: user)
     }
     
     public struct PublicParticipant: Codable {
-        public let userID: User.ID
+        public let user: User.PublicUser
         public let approval: ApprovalType
         public let joining: Date
         
-        public init(participation: Participation) {
-            self.userID = participation.userID
+        public init(participation: Participation, user: User.PublicUser) {
+            self.user = user
             self.approval = ApprovalType(rawValue: participation.status)!
             self.joining = participation.joining
         }
