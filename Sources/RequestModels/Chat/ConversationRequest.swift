@@ -16,3 +16,11 @@ public struct ConversationRequest: Codable {
         self.participants = participants
     }
 }
+
+public struct ConversationUpdateRequest: Codable {
+    public let title: String?
+    
+    public init(title: String?) {
+        self.title = title
+    }
+}
