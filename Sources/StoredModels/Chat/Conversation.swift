@@ -20,8 +20,8 @@ public final class Conversation: StoredModel {
 }
 
 public extension Conversation {
-    public func publicConversation(newestMessage: DirectMessage?) throws -> PublicConversation {
-        return try PublicConversation(conversation: self, newestMessage: newestMessage)
+    public func publicConversation(newestMessage: DirectMessage?, participants: [Participation.PublicParticipant]) throws -> PublicConversation {
+        return try PublicConversation(conversation: self, newestMessage: newestMessage, participants: participants)
     }
     
     public struct PublicConversation: Codable {
@@ -30,8 +30,9 @@ public extension Conversation {
         public let title: String?
         public let creation: Date
         public let newestMessage: DirectMessage.PublicDirectMessage?
+        public let participants: [Participation.PublicParticipant]
         
-        public init(conversation: Conversation, newestMessage: DirectMessage?) throws {
+        public init(conversation: Conversation, newestMessage: DirectMessage?, participants: [Participation.PublicParticipant]) throws {
             guard let id = conversation.id else {
                 throw StoredModelError.missingID
             }
@@ -41,6 +42,7 @@ public extension Conversation {
             self.title = conversation.title
             self.creation = conversation.creation
             self.newestMessage = try newestMessage?.publicDirectMessage()
+            self.participants = participants
         }
     }
 }
