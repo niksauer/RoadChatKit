@@ -7,14 +7,12 @@
 
 import Foundation
 
-public struct Image: Codable {
-    public struct PublicImage: Codable {
-        public let filename: String
-        public let data: Data
-        
-        public init(filename: String, data: Data) {
-            self.filename = filename
-            self.data = data
-        }
+public struct PublicImage: Codable {
+    public let filename: String
+    public let data: Data
+    
+    public init(filename: String, data: Data) {
+        self.filename = filename
+        self.data = data
     }
 }
