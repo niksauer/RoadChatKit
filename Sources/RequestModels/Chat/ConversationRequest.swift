@@ -9,11 +9,11 @@ import Foundation
 
 public struct ConversationRequest: Codable {
     public let title: String?
-    public let participants: [Int]
+    public let recipients: [Int]
     
-    public init(title: String?, participants: [Int]) {
+    public init(title: String?, recipients: [Int]) {
         self.title = title
-        self.participants = participants
+        self.recipients = recipients
     }
 }
 
