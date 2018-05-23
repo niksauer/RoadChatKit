@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240DAEA820B61667002A17EB /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240DAEA720B61667002A17EB /* Image.swift */; };
 		24B443EF207991E70062834C /* TrafficType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443EE207991E70062834C /* TrafficType.swift */; };
 		24B443F1207991FE0062834C /* KarmaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B443F0207991FE0062834C /* KarmaType.swift */; };
 		24EB88952087A9C400B7A285 /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24EB88942087A9C400B7A285 /* UserRequest.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		240DAEA720B61667002A17EB /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		24B443EE207991E70062834C /* TrafficType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficType.swift; sourceTree = "<group>"; };
 		24B443F0207991FE0062834C /* KarmaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaType.swift; sourceTree = "<group>"; };
 		24EB88942087A9C400B7A285 /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240DAEA620B61654002A17EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				240DAEA720B61667002A17EB /* Image.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		24FE0064207D5F9400F0D657 /* OptionTypes */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 		OBJ_26 /* StoredModels */ = {
 			isa = PBXGroup;
 			children = (
+				240DAEA620B61654002A17EB /* Shared */,
 				OBJ_27 /* Chat */,
 				OBJ_31 /* Community */,
 				OBJ_33 /* Traffic */,
@@ -310,6 +321,7 @@
 			files = (
 				24B443F1207991FE0062834C /* KarmaType.swift in Sources */,
 				OBJ_51 /* StoredModel.swift in Sources */,
+				240DAEA820B61667002A17EB /* Image.swift in Sources */,
 				24FE0063207D5F7200F0D657 /* SexType.swift in Sources */,
 				OBJ_52 /* ConversationRequest.swift in Sources */,
 				OBJ_53 /* DirectMessageRequest.swift in Sources */,
