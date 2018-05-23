@@ -9,8 +9,8 @@ import Foundation
 
 public struct Image: Codable {
     public struct PublicImage: Codable {
-        let filename: String
-        let data: Data
+        public let filename: String
+        public let data: Data
         
         public init(filename: String, data: Data) {
             self.filename = filename
