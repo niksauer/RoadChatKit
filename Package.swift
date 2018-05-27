@@ -8,6 +8,6 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .target(name: "RoadChatKit", dependencies: [], path: "./Sources"),
+        .target(name: "RoadChatKit", dependencies: [], path: "./RoadChatKit"),
     ]
 )
