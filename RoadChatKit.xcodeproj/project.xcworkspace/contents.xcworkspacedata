@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RoadChatKit_iOS.xcodeproj">
+      location = "self:/Users/nik/Documents/Developer/Swift/RoadChatKit_iOS/RoadChatKit.xcodeproj">
    </FileRef>
 </Workspace>
